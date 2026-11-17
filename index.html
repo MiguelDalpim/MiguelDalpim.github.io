@@ -1,20 +1,28 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Início — LiveClips BR</title><style>
-:root{--bg:#0b0b12;--card:#15131f;--txt:#ece9f5;--mut:#a39fb5;--a:#a855f7;--b:#ec4899}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% 0,#2e1065 0,var(--bg) 60%);color:var(--txt);
-font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh}
-main{max-width:760px;margin:0 auto;padding:56px 22px 80px}
-h1{font-size:38px;line-height:1.15;margin:0 0 8px;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
-h2{font-size:20px;margin:30px 0 8px}p,li{color:var(--txt)}.mut{color:var(--mut)}
-.card{background:var(--card);border:1px solid #2a2540;border-radius:16px;padding:26px 28px;margin-top:22px}
-a{color:#d8b4fe}nav{display:flex;gap:18px;margin-bottom:34px;font-weight:600}nav a{text-decoration:none}
-.br{display:inline-block;background:#16a34a;color:#fde047;border-radius:8px;padding:0 10px;font-weight:800;font-size:.7em;vertical-align:middle;-webkit-text-fill-color:#fde047}
-footer{margin-top:40px;color:var(--mut);font-size:14px}
-</style></head><body><main><nav><a href="index.html">Início</a><a href="termos.html">Termos de Uso</a><a href="privacidade.html">Privacidade</a></nav><h1>LiveClips <span class="br">BR</span></h1>
-<p class="mut">Os melhores momentos das lives, em vídeos curtos.</p>
-<div class="card"><p>O LiveClips BR é uma ferramenta de uso pessoal, que roda no computador do próprio usuário.
-Ela identifica os melhores momentos de transmissões ao vivo autorizadas, transforma em vídeos curtos verticais com legenda
-e, <b>somente depois da aprovação manual do usuário</b>, envia o vídeo para os rascunhos da conta do TikTok do próprio usuário,
-por meio das APIs oficiais do TikTok (Login Kit e Content Posting API). A publicação final é sempre feita pelo usuário, no aplicativo do TikTok.</p></div>
-<div class="card"><h2 style="margin-top:0">Documentos</h2><ul><li><a href="termos.html">Termos de Uso</a></li><li><a href="privacidade.html">Política de Privacidade</a></li></ul></div>
-<footer>LiveClips BR · ferramenta de uso pessoal · última atualização: 16/11/2026</footer></main></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LiveClips BR</title><meta name="description" content="LiveClips BR: transforma os melhores momentos das lives em vídeos curtos e envia os aprovados para os rascunhos do TikTok.">
+<link rel="stylesheet" href="style.css"></head><body><div class="wrap">
+<header class="top"><a class="mark" href="index.html">LiveClips <i>BR</i></a>
+<nav aria-label="Páginas"><a href="index.html" aria-current="page">Início</a><a href="termos.html">Termos de Uso</a><a href="privacidade.html">Privacidade</a></nav></header>
+<main>
+<section class="hero">
+<div>
+<h1>Os melhores momentos da live, prontos para o TikTok.</h1>
+<p>O LiveClips BR roda no seu próprio computador. Ele encontra os momentos marcantes de transmissões ao vivo autorizadas, transforma em vídeos verticais com legenda e, só depois que você aprova, envia para os rascunhos da sua conta do TikTok.</p>
+</div>
+<div class="phone" aria-hidden="true"><div class="screen"><span class="live">AO VIVO</span><span class="ball"></span>
+<p class="sub" id="sub"><span>Vai,</span> <span>levanta</span> <span>pra</span> <span>mim!</span></p></div></div>
+</section>
+<section class="steps">
+<h2>Como funciona</h2>
+<ol>
+<li><h3>Grava a live</h3><p>Só de canais que autorizaram o uso dos cortes.</p></li>
+<li><h3>Corta e legenda</h3><p>Escolhe os melhores trechos e monta o vídeo em 9:16 com legenda.</p></li>
+<li><h3>Você aprova</h3><p>Cada corte chega para revisão. Nada sai sem o seu OK.</p></li>
+<li><h3>Vai para os rascunhos</h3><p>O vídeo aprovado é enviado aos rascunhos do TikTok pela API oficial. Você publica pelo app.</p></li>
+</ol>
+<p class="note">Usamos o Login Kit e a Content Posting API do TikTok. O app lê só o seu nome de exibição e envia vídeos para os rascunhos; ele nunca publica sozinho. Detalhes nos <a href="termos.html">Termos de Uso</a> e na <a href="privacidade.html">Política de Privacidade</a>.</p>
+</section>
+</main>
+<script>(function(){var w=document.querySelectorAll('#sub span');if(matchMedia('(prefers-reduced-motion: reduce)').matches){w[1].className='on';return}var i=0;setInterval(function(){w.forEach(function(s){s.className=''});w[i%w.length].className='on';i++},520)})();</script>
+<footer><span>LiveClips BR, ferramenta de uso pessoal</span><span>Última atualização: 16/11/2026</span></footer></div></body></html>
